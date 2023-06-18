@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tag META define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Gerador de senhas">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Senha</title>
+</head>
+<body>
+
+  <img class="logo" src="./img/logo.png.JPG" alt="Gerar senha logo"/>
+
+  <div class="container-input">
+    <span> Inserir senha,minimo 5 e maxímo 10 </span> <span id="10"> caractéres</span></span>
+    <input id="slider" class="slider" type="range" min="5" max="10" value=""/>
+
+    <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+  </div>
+
+
+  <div id="container-password" onclick="copyPassword()" class="container-password hide">
+    <span class="title"> SENHA GERADA COM SUCESSO </span>
+    <span id="password"  class="password"></span>
+    <span class="tooltip">Copiar senha.👆</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
